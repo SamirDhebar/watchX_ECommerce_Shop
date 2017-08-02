@@ -9,7 +9,7 @@ This is an outline for the eCommerce website which will be built on the front-en
 * /ordersuccess - Page that displays when a user orders from the site and checkouts out successfully
 
 ## Components Required
-* Product.js -
+* Products.js -
  - `props.product.name` - name would be a string
  - `props.product.description` - description would be a string
  - `props.product.cost` - cost would be a number
@@ -18,8 +18,11 @@ This is an outline for the eCommerce website which will be built on the front-en
 * Search.js - where a user can search for items
 * Cart.js - place that holds users' items before checkout
 * Modal.js - customizable alert that pops up when a user first enters the site
-* Header.js - how the top of the website acts
-* Footer.js - how the bottom of the website acts
+* Navigation.js - Bar that allows users to navigate to other parts of the site
 
 ## Inspriation
 * [Camelbak](https://www.camelbak.com/) - A clean, interactive website that makes looking at backpacks and waterbottles interesting!
+
+## License
+This is available under the MIT License. Any distributions of it must also carry
+this license.
