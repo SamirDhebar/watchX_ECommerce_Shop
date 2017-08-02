@@ -6,6 +6,7 @@ This is an outline for the eCommerce website which will be built on the front-en
 * /cart - Page where users can browse items in their shopping cart
 * /checkout - Page where users can see all of the items in their cart and they are ready to checkout and add relevant info
 * /items - Page which will display all of the items
+* /404 - Error page
 * /ordersuccess - Page that displays when a user orders from the site and checkouts out successfully
 
 ## Components Required
