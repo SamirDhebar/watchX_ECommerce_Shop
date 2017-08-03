@@ -8,6 +8,7 @@ import Item from "components/Item";
 import Home from "pages/Home";
 import Cart from "pages/Cart";
 import Checkout from "pages/Checkout";
+import Contact from "pages/Contact";
 import AllItems from "pages/AllItems";
 import FourOhFour from "pages/404";
 import OrderSuccess from "pages/OrderSuccess";
