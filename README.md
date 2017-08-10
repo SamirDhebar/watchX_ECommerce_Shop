@@ -28,7 +28,7 @@ installed, there are only two commands:
 └── webpack.config.js  # Webpack configuration for dev _and_ production
 ```
 
-## Inspriation
+## Inspiration
 * [Camelbak](https://www.camelbak.com/) - A clean, interactive website that makes looking at backpacks and waterbottles interesting!
 
 ## License
