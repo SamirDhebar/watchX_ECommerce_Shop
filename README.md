@@ -31,5 +31,11 @@ installed, there are only two commands:
 ## Inspiration
 * [Camelbak](https://www.camelbak.com/) - A clean, interactive website that makes looking at backpacks and waterbottles interesting!
 
+## Contribute
+
+Contributions are always welcome!
+Please read the [contribution guidelines](contributing.md) first.
+
 ## License
-* This eCommerce React site is available the under the [MIT License](https://github.com/samirdhebar/Price-Buzz/blob/master/LICENSE.md).
+
+<img src="mitLicense.png" align= "center" />  This eCommerce React site is available the under the [MIT License](https://github.com/samirdhebar/Price-Buzz/blob/master/LICENSE.md).
