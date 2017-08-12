@@ -1,4 +1,4 @@
-<img src="shoppingCart.png" align="right" />
+<img src="src/assets/images/shoppingCart.png" align="right" />
 
 # React eCommerce Project [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/samirdhebar/Price-Buzz/master/LICENSE.md)
 Front-end project app utilizing React. This React project is an eCommerce website that will showcase products, allow users to add them to the shopping cart and finally check out with all of one's products when the user has completed shopping.
@@ -34,8 +34,8 @@ installed, there are only two commands:
 ## Contribute
 
 Contributions are always welcome!
-Please read the [contribution guidelines](contributing.md) first.
+Please read the [contribution guidelines](Contributing.md) first.
 
 ## License
 
-<img src="mitLicense.png" align= "center" />  This eCommerce React site is available the under the [MIT License](https://github.com/samirdhebar/Price-Buzz/blob/master/LICENSE.md).
+<img src="src/assets/images/mitLicense.png" align= "center" />  This eCommerce React site is available the under the [MIT License](https://github.com/samirdhebar/Price-Buzz/blob/master/LICENSE.md).
