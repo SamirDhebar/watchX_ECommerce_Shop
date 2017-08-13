@@ -28,13 +28,14 @@ installed, there are only two commands:
 └── webpack.config.js  # Webpack configuration for dev _and_ production
 ```
 
-## Inspiration
-* [Camelbak](https://www.camelbak.com/) - A clean, interactive website that makes looking at backpacks and waterbottles interesting!
-
 ## Contribute
 
 Contributions are always welcome!
 Please read the [contribution guidelines](Contributing.md) first.
+
+## Attributions
+
+* The backend server that this eCommerce relies on was used from this [repository](https://github.com/wbobeirne/nycda-ecommerce-server).
 
 ## License
 
