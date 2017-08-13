@@ -7,11 +7,10 @@ class Checkout extends Component {
 		this.state = {
 			customerName: "",
 			customerEmail: "",
-			customerPhone: 0,
 			customerAddress: "",
 			customerState: "",
-			customerZip: 0,
-			isValid: false,
+			customerZip: "",
+			customerPhone: "",
 		};
 	}
 	render() {
