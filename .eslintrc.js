@@ -129,7 +129,6 @@ const eslintConf = {
 		}],
 		"wrap-iife": [SEV2, "outside"],
 		"arrow-spacing": [SEV3, { before: true, after: true }],
-		"arrow-body-style": [SEV3, "as-needed"],
 		"arrow-parens": [SEV3, "always"],
 
 		// Classes
@@ -179,8 +178,11 @@ if (hasReact) {
 		"react/jsx-pascal-case": SEV2,
 		"react/jsx-wrap-multilines": SEV2,
 		"react/self-closing-comp": SEV2,
+		"react/default-props-match-prop-types": SEV2,
+		"react/prop-types": SEV2,
 
 		"react/jsx-closing-bracket-location": SEV3,
+		"react/jsx-indent-props": [SEV3, tabsOrSpaces],
 	});
 }
 
