@@ -8,11 +8,14 @@ class Navigation extends Component {
 			to: "/",
 			text: "iWatch",
 		}, {
-			to: "/products",
-			text: "Products",
+			to: "/catalog",
+			text:"Products",
 		}, {
 			to: "/cart",
 			text: "Cart",
+		}, {
+			to: "/contact",
+			text: "Contact Us",
 		}];
 
 		return (
