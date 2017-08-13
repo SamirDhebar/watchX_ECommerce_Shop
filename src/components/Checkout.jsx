@@ -20,28 +20,28 @@ class Checkout extends Component {
   			<div className="checkout-form-container">
   				<form action="/Success">
   					<div className="button-field">
-  						<label name="userName">Username</label>
-  						<input type="text" name="userName" required />
+  						<label name="fullName">Full Name</label>
+  						<input type="text" name="fullName" required />
   					</div>
   					<div className="button-field">
-  						<label name="userEmail">userEmail</label>
-  						<input type="text" name="userEmail" required />
+  						<label name="emailAddress">Email</label>
+  						<input type="text" name="emailAddress" required />
   					</div>
   					<div className="button-field">
-  						<label name="userPhone">Phone</label>
-  						<input type="text" name="userPhone" required />
+  						<label name="phoneNumber">Phone Number</label>
+  						<input type="text" name="phoneNumber" required />
   					</div>
   					<div className="button-field">
-  						<label name="userAddress">Street address</label>
+  						<label name="userAddress">Street Address</label>
   						<input type="text" name="userAddress" required />
   					</div>
   					<div className="button-field">
-  						<label name="userState">State</label>
-  						<input type="text" name="userState" required />
+  						<label name="customerState">State</label>
+  						<input type="text" name="customerState" required />
   					</div>
   					<div className="button-field">
-  						<label name="userZip">Zip code</label>
-  						<input type="text" name="userZip" required />
+  						<label name="customerZip">Zip code</label>
+  						<input type="text" name="customerZip" required />
   					</div>
   					<div className="button-field-submit hidden">
   						<label name="submit" >Submit</label>
