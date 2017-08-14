@@ -4,24 +4,25 @@ import { Link } from "react-router-dom";
 
 class Catalog extends Component {
 	render() {
+		const { products } = this.props;
 		return (
-			<div>
-				<div className="All">
-					{PRODUCTS.map((product) => (
-						<div className="container">
-							<Link to={`./Detail/${product.id}`}>
-								<div className="All-prod center">
-									<h3>{product.name}</h3>
-									<img src={product.images[0].medium}/>
-		 							</div>
+			<div className = "Catalog">
+				{products.map((product) => {
+					return [
+						<div className = "Catalog-item">
+							<Link key = {product.id} to= {`/product/${product.id}`}>
+								<h3 className = "Catalog-name"> {product.name}</h3>
 							</Link>
-						</div>
-					))}
-				</div>
+													 <img className= "Catalog-image-main" src= {product.images[0].large}/>
+													 <div className= "Catalog-image-details">
+											 		 <img className= "Catalog-image-side" src= {product.images[1].medium}/>
+													 <h3 className= "Catalog-price"> ${product.price}</h3>
+													 </div>
+												 </div>];
+				})}
 			</div>
 		);
 	}
 }
-
 
 export default Catalog;
