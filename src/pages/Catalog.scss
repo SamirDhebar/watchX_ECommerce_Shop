@@ -1,0 +1,89 @@
+html {
+  background: url(http://i.imgur.com/ilsGYnc.jpg);
+  background-size: cover;
+}
+
+
+.spacer {
+	&-horizontal {
+		width: 100%;
+		height: 35px;
+	}
+	&-vertical {
+		height: 100%;
+		width: 1000px;
+		margin-left: calc(50% - 900px);
+	}
+}
+.product {
+	&-container {
+		width: 300px;
+		height: 200px;
+		display: inline-block;
+		float: left;
+		margin-top: 35px;
+		border: 1px solid grey;
+		border-radius: 2px;
+		opacity: 1;
+		&:hover {
+			transform: scale(1.02);
+			margin: 0 2px;
+			margin-top: 35px;
+			box-shadow: 0 3px 5px #ccc;
+			.page-button {
+				box-shadow: 0 3px 5px #cdd;
+			}
+		}
+	}
+	&-images {
+		width: 35%;
+		height: 100%;
+		display: inline-block;
+
+	}
+	&-description {
+		width: 60%;
+		height: 100%;
+		display: inline-block;
+		position: relative;
+		border-left: 1px solid blue;
+		.title {
+			font-size: .8em;
+			display: block;
+		}
+		.details {
+			width: 100%;
+			border-top: 1px solid grey;
+			font-size: .4em;
+			text-align: justify;
+			display: block;
+			padding-top: 10px;
+		}
+		.price {
+			margin-top: 10%;
+		}
+		a {
+			text-decoration: none;
+			color: #fff;
+		}
+		.page-button {
+			width: 45px;
+			height: 25px;
+			position: absolute;
+			bottom: 10px;
+			right: 0;
+			border: 1px solid blue;
+			background-color: blue;
+			border-radius: 4px;
+			text-align: center;
+			line-height: 200%;
+			font-size: 1em;
+			opacity: .9;
+
+			&:hover {
+				opacity: 1;
+				font-size: 1.05em;
+			}
+		}
+	}
+}

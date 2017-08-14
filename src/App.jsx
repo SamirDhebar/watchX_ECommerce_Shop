@@ -28,7 +28,7 @@ class App extends React.Component {
 		cartTotalItems : 0,
 	};
 
-
+	// all App functions are declared here //
  	_getProduct = (productId) => {
 			return this.state.products.reduce((prev, product) => {
 				return product.id === productId ? product : prev;
@@ -67,7 +67,7 @@ class App extends React.Component {
 						<Route exact path = "/contact" component = {Contact}/>
 						<Route exact path = "/catalog" render = {(props) => {
 							return (
-								<Gallery
+								<Catalog
 									products = {products}
 								/>
 							);

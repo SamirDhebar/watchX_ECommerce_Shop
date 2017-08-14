@@ -8,10 +8,7 @@ class Home extends Component {
 			<div className="app-home">
 				<div className="container">
 					<div className="image-container"  />
-					<div className="info-container" >
-
-								Catalog
-					</div>
+					<div className="info-container"  />
 
 				</div>
 			</div>
