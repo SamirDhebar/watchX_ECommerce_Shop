@@ -22,7 +22,7 @@ class Cart extends Component {
 							</div>
 						))}
 					</ul>
-					<div className="cart-count">{ cartCount } items in your Cart</div>
+					<div className="cart-count">{ cartCount } Items in your Cart</div>
 				</div>
 			);
 		}

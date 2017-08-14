@@ -7,7 +7,7 @@ class Catalog extends Component {
 	render() {
 		const { products } = this.props;
 		return (
-			<div className="listPage">
+			<div className="catalogPage">
 				<div className="spacer-horizontal" />
 				<div className="spacer-vertical" />
 				{ products.map((product) => {
@@ -27,7 +27,7 @@ class Catalog extends Component {
 										</div>
 										<div className="price">$ {product.price}</div>
 										<Link key={product.id} to={`/product/${product.id}`} >
-											<div className="page-button">Additional Info</div>
+											<div className="page-button">Info</div>
 										</Link>
 									</div>
 								</div>
