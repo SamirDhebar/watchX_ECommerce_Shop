@@ -27,7 +27,11 @@ class Catalog extends Component {
 										</div>
 										<div className="price">$ {product.price}</div>
 										<Link key={product.id} to={`/product/${product.id}`} >
-											<div className="page-button">Info</div>
+											<button className="page-button"
+												value={product.price}
+												onClick={this._handleClick}
+											>Info</button>
+
 										</Link>
 									</div>
 								</div>

@@ -1,38 +1,40 @@
+import "./Cart.scss";
 import React, { Component } from "react";
-import PRODUCTS from "json/products.json";
+
 class Cart extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			// cartTotal: 0,
+			items: {},
 		};
 	}
+
+	addToCart() {
+	 	const cart = [...this.state.cart];
+		console.log(cart);
+	}
+
+
 	render() {
-		const { cart, cartCount } = this.props;
-		if (cartCount > 0) {
-			return (
-				<div className="app">
-					<h1>Cart</h1>
-					<ul>
-						{cart.map((item) => (
-							<div className="items-container">
-								<img src={item.images[0].small} />
-								<h1>{item.name}</h1>
-								<h3>{item.price}</h3>
-							</div>
-						))}
-					</ul>
-					<div className="cart-count">{ cartCount } Items in your Cart</div>
-				</div>
-			);
-		}
-		else {
-			return (
-				<div className="empty-cart">
-					<h1>Your cart is empty</h1>
-				</div>
-			);
-		}
+		const { cart } = this.props;
+		let sum = 0;
+		return (
+			<div className="cart-items">
+				<h1>Shopping Cart</h1>
+				{cart.map((item) => {
+					sum = sum + parseInt(item.price);
+					return (
+						<ul>
+							<img className="cart-img" src={item.images[0].small}/>
+							{item.name}
+							{item.price}
+						</ul>
+					);
+				})}
+			Total: ${sum}
+			</div>
+		);
 	}
 }
+
 export default Cart;
