@@ -52,6 +52,7 @@ $accent-color: #495372;
 		width: 60%;
 		height: 100%;
 		display: inline-block;
+    font-family: 'Cantora One', sans-serif;
 		position: relative;
     font-size: 25px;
 		// border-left: 1px solid $accent-color;
@@ -73,6 +74,7 @@ $accent-color: #495372;
 		}
 		a {
 			text-decoration: none;
+      font-family: 'Cantora One', sans-serif;
 			color: #fff;
       font-size: 10px;
 		}
@@ -85,10 +87,11 @@ $accent-color: #495372;
 			right: 0;
 			border: 1px solid $accent-color;
 			background-color: $accent-color;
+      font-family: 'Cantora One', sans-serif;
 			border-radius: 4px;
 			text-align: center;
 			line-height: 200%;
-			font-size: 1em;
+			font-size: 10px;
 			// opacity: .9;
 
 			// &:hover {
