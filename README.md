@@ -12,16 +12,34 @@ installed, there are only two commands:
 * `npm run build` - Builds the production version, which goes into `dist`
 
 ## Project Structure
-
 ```
-.
-├── src                # Source code, including raw assets
+.server/
+├── index.js   # Server entry point
+├── middleware # Reusable middleware
+├── models     # Sequelize data models
+│
+├── routes        # Where all routing happens
+│   ├── admin.js  ### Admin pages, render using views
+│   ├── api.js    ### Endpoints that deal only in JSON
+│   └── react.js  ### Handle rendering the React template, dev server
+│
+├── util                 # Shared utility functions
+│   ├── sequelize.js     ### Sequelize instance w/ config
+│   └── uploadToImgur.js ### Imgur uploading relegated to this nasty file
+│
+└── views            # Admin views only
+    ├── pages        ### Pages that are included by template.ejs
+    └── template.ejs ### Shared template for admin pages
+
+.src/
+├──
 │   ├── App.jsx        ### The top-level component for React
 │   ├── App.scss       ### Any general, non-component styling done here
-│   ├── assets         ### Static assets
+├── assets             ### Static assets
 │   │   ├── fonts      ##### Fonts(eot|otf|ttf|woff|woff2)
 │   │   └── images     ##### Images (gif|png|jpe?g|svg|ico)
 │   ├── components     ### Any shared components
+│   ├── pages          ### Any shared pages
 │   ├── index.ejs      ### HTML template for the app
 │   └── index.js       ### Webpack entry point / component mounting
 ├── dist               # Any built files are here, not checked in
