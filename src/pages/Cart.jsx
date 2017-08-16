@@ -14,7 +14,6 @@ class Cart extends Component {
 		console.log(cart);
 	}
 
-
 	render() {
 		const { cart } = this.props;
 		let sum = 0;

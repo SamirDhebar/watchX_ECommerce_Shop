@@ -11,8 +11,19 @@ class Checkout extends Component {
 			customerState: "",
 			customerZip: "",
 			customerPhone: "",
+			error: null,
 		};
 	}
+
+	_handleChange = (event) => {
+		this.setState({
+			[event.target.name]: [event.target.name],
+		});
+	}
+	_handleSubmit = () => {
+
+	}
+
 	render() {
   		const { cartTotal } = this.props;
 

@@ -1,6 +1,7 @@
 import "./Navigation.scss";
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import watchImg from "assets/images/watch.png";
 
 class Navigation extends Component {
 	render() {
@@ -22,7 +23,7 @@ class Navigation extends Component {
 			<div>
 				<nav className="navbar">
 					<div className="logo-box">
-						<img src="src/assets/images/watch.png" className="logo-image" />
+						<img src={watchImg} className="logo-image" />
 					</div>
 					{links.map((link) => (
 						<NavLink
@@ -35,14 +36,12 @@ class Navigation extends Component {
 						</NavLink>
 					))}
 					{/* <span className="nav-display-cart-count">{ this.props.cartCount }</span> */}
-					<img src="src/assets/images/watch.png" className="logo-image" />
+					<img src={watchImg} className="logo-image" />
 
 				</nav>
 			</div>
 		);
 	}
 }
-
-
 
 export default Navigation;
