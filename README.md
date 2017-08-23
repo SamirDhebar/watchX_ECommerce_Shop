@@ -1,6 +1,6 @@
 <img src="src/assets/images/shoppingCart.png" align="right" />
 
-# React eCommerce Project [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/samirdhebar/Price-Buzz/master/LICENSE.md)
+# Time Buzz -- React eCommerce Project [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/samirdhebar/Price-Buzz/master/LICENSE.md)
 Front-end project app utilizing React. This React project is an eCommerce website that will showcase products, allow users to add them to the shopping cart and finally check out with all of one's products when the user has completed shopping.
 
 ## Getting Started
@@ -47,6 +47,15 @@ dist                     # Any built files are here, not checked in
 webpack.config.js        # Webpack configuration for dev _and_ production
 
 ```
+## Technology used
+
+<img src="src/assets/images/node.png" align= "center" /> <br><br>  
+* Node is a multi-platform, open-source Javascript run-time environment that executes code on the server-side.
+<br><br>
+
+<img src="src/assets/images/react.png" align= "center" /> <br><br>
+* React is a Javascript library designed at making the process of building modular, reusable user interface components simple and intuitive.
+<br>
 
 ## Contribute
 
