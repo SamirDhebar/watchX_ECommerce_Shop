@@ -53,7 +53,7 @@ webpack.config.js        # Webpack configuration for dev _and_ production
 * Node is a multi-platform, open-source Javascript run-time environment that executes code on the server-side.
 <br><br>
 
-<img src="src/assets/images/react.png" align= "center" /> <br><br>
+<img src="src/assets/images/react1.png" align= "center" /> <br><br>
 * React is a Javascript library designed at making the process of building modular, reusable user interface components simple and intuitive.
 <br>
 
