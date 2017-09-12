@@ -1,105 +1,43 @@
-// First items required to import: styling, react and router
 import "./App.scss";
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-
-// Importing components below
-import Checkout from "components/Checkout";
-import Item from "components/Item";
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import reduxThunk from "redux-thunk";
+import reducers from "reducers";
 import Navigation from "components/Navigation";
-import Products from "components/Products";
-
-// Importing pages below
-import FourOhFour from "pages/404";
-import Cart from "pages/Cart";
-import Contact from "pages/Contact";
 import Home from "pages/Home";
-import Items from "pages/Product";
-import OrderSuccess from "pages/OrderSuccess";
-import Catalog from "pages/Catalog";
+import About from "pages/About";
+import Gallery from "pages/Gallery";
+import Product from "pages/Product";
+import Cart from "pages/Cart";
+import Checkout from "pages/Checkout";
+import Contact from "pages/Contact";
+import FourOhFour from "pages/404";
 
-// Import JSON info
-import PRODUCTS from "json/products.json";
+const store = createStore(reducers, applyMiddleware(reduxThunk));
 
 class App extends React.Component {
-	state = {
-		products: PRODUCTS,
-		cart: [],
-		cartTotalItems : 0,
-	};
-
-	// all App functions are declared here //
- 	_getProduct = (productId) => {
-			return this.state.products.reduce((prev, product) => {
-				return product.id === productId ? product : prev;
-			});
-		}
-
-	_addToCart = (productId) => {
-		const { cart, products } = this.state;
-		this.setState({
-			cart: [
-				...cart,
-				this._getProduct(productId),
-			],
-			cartTotalItems: cart.length + 1,
-		});
-	}
-
-	// _removeFromCart = (itemId) =>{
-	// 	const { cart, items } = this.state;
-	// 	this.setState({
-	// 		cart: [
-	// 			...cart.
-	//
-	// 		]
-	// 	})
-	// }
-
 	render() {
-		const { products, cart, cartTotalItems } = this.state;
+		// const { products, cart, cartTotalItems } = this.state;
 		return (
-			<BrowserRouter>
-				<div>
-					<Navigation cartTotalItems = {this.state.cartTotalItems}/>
-					<Switch>
-						<Route exact path ="/" component = {Home}/>
-						<Route exact path = "/contact" component = {Contact}/>
-						<Route exact path = "/catalog" render = {(props) => {
-							return (
-								<Catalog
-									products = {products}
-								/>
-							);
-						}}
-						/>
-						<Route exact path = "/product/:productId" render = {(props) => {
-							return (
-								<Product
-									product = {this._getProduct(props.match.params.productId)}
-									addToCart = {this._addToCart}
-								/>
-							);
-						}}
-						/>
-						<Route exact path = "/cart" render = {(props) => {
-							return (
-								<Cart
-									cart = {cart}
-								/>
-							);
-						}}
-						/>
-						<Route exact path = "/checkout" render = {(props) => {
-							return (
-								<Checkout />
-							);
-						}}
-						/>
-						<Route exact path = "/contact" component = {Contact}/>
-					</Switch>
-				</div>
-			</BrowserRouter>
+			<Provider store={store}>
+				<BrowserRouter>
+					<div>
+						<Navigation/>
+						<Switch>
+							<Route exact path ="/" component = {Home}/>
+							<Route exact path = "/about" component = {About}/>
+							<Route exact path = "/gallery" component= {Gallery}/>
+							<Route exact path = "/product/:productId" component = {Product}/>
+							<Route exact path = "/cart" component = {Cart}/>
+							<Route exact path = "/checkout" component = {Checkout} />
+							<Route exact path = "/contact" component = {Contact}/>
+							<Route exact path= "*" component={FourOhFour} />
+						</Switch>
+					</div>
+				</BrowserRouter>
+			</Provider>
 		);
 	}
 }
