@@ -1,30 +1,115 @@
-.app-home{
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: 'Monsterrat';
+	line-height: 1.5;
+	padding: 48px 12px;
 
 }
 
-html {
-  // background: url(http://i.imgur.com/rBlZHKy.jpg);
-  // background-size: cover;
+body.has-bg {
+	background: url('https://i.imgur.com/GccnPCA.jpg');
+	background-size: cover no-repeat;
+
 }
 
-// .image-container {
-// 	height: 500px;
+.home {
+	// box-shadow: 7.5px 7.5px 3.75px #888888;
+	border: 100%;
+	// background-color: #edf2f2;
+	padding: 30px;
+	width: 100%;
+	// opacity: 0.3;
+	margin: auto;
+}
+
+.ui.menu {
+	background-color: #0b3948;
+}
+//
+// h1 {
+// 	margin-top: 8px;
+// 	padding-bottom: 8px;
+// 	text-align: center;
 // }
 //
-// .products-button {
-// 	width: 200px;
-// 	height: 100px;
-// 	border: 1px solid grey;
+// h3 {
+// 	margin-top: 8px;
+// 	padding-bottom: 8px;
 // 	text-align: center;
-// 	margin: 0 auto;
-// 	background-color: #ddd;
 // }
-// .info-container {
-// 	a {
-// 		text-decoration: none;
-// 		color: #000;
-// 	}
+//
+// p {
+// 	font-size: 15px;
+// 	text-align: center;
 // }
-// .info-container {
-// 	border: 1px solid white;
-// }
+div.foo{
+  width: 10%;
+  margin: 0 auto;
+  text-align: center;
+}
+.letter{
+  display: inline-block;
+  font-weight: 400;
+  font-size: 3.5em;
+	padding-right: 250px;
+  margin: 0.2em;
+  position: relative;
+  color: #0b3948;
+	// color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+	color: rgb(222, 214, 156);
+  text-shadow:
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+	  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #0b3948;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}

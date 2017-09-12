@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: 'Montserrat';
+	line-height: 1.5;
+	padding: 48px 12px;
+	background-image: url();
+ background-size: cover;
+
+}
+.product {
+	padding-top: 50px;
+}
+.product-name {
+	text-align: center;
+	font-size: 40px;
+}
+
+.product-image {
+	padding-top: 10px;
+	margin: auto;
+}
+
+.product-description {
+	font-size: 22px;
+	padding-top: 20px;
+	margin: auto;
+	text-align: center;
+}
+
+.product-images {
+	padding-top: 30px;
+	margin: auto;
+}
+
+.product-image-side {
+	display: inline-block;
+	width: 20%;
+}
+
+.product-image-main {
+	display: inline-block;
+	width: 60%;
+}
+
+.product-image-band {
+	display: inline-block;
+	width: 20%;
+}
+
+.product-specs {
+	padding-top: 20px;
+}
+
+.product-specs-label {
+	font-weight: bold;
+}
+
+.product-price {
+	display: inline-block;
+	font-size: 25px;
+	padding-top: 20px;
+}
+.product-buy-button {
+float: right;
+padding-top: 20px;
+}

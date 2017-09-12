@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: 'Montserrat';
+	line-height: 1.5;
+	padding: 48px 12px;
+ 	background: #9ca4de;
+
+}
+.gallery-item {
+	background: url('https://wallpaperscraft.com/image/minimalism_texture_black_55242_1920x1080.jpg');
+	padding: 80px;
+	width: 100%;
+	margin: auto;
+}
+.gallery-name {
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+color: #9ca4de;
+}
+
+.gallery-images {
+	display: block;
+	margin: auto;
+
+	text-align: center;
+}
+
+.gallery-image-main {
+	display: block;
+
+	padding: 30px;
+	height: 544px;
+	width: 300;
+	margin: auto;
+}
+
+.gallery-image-details {
+	width: 100%;
+	color: #9ca4de;
+	height: 50px;
+}
+
+.gallery-rating {
+	float: left;
+	color: #9ca4de;
+	padding-top: 20px;
+}
+
+.gallery-category {
+	float: left;
+		padding-top: 20px;
+	color: #9ca4de;
+}
+.gallery-price {
+	float: right;
+	padding-top: 20px;
+}

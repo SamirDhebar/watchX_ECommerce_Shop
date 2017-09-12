@@ -1,13 +1,22 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-class FourOhFour extends Component {
+class FourOFour extends Component {
 	render() {
 		return (
-			<div className="404Class">
-				<h1>Page not found!</h1>
+			<div className= "404">
+				<Link to="/">
+					<body>
+						<code>
+							<span>The Time Has Gone Missing! 404 Error!</span>
+						</code>
+
+
+					</body>
+				</Link>
 			</div>
 		);
 	}
 }
 
-export default FourOhFour;
+export default FourOFour;
