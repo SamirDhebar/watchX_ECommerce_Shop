@@ -1,6 +1,6 @@
 <img src="src/assets/images/shoppingCart.png" align="right" />
 
-# One Watch at a Time  <br> React eCommerce Project [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/samirdhebar/Price-Buzz/master/LICENSE.md)
+# watchX  <br> React eCommerce Project [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/samirdhebar/Price-Buzz/master/LICENSE.md)
 Front-end project app utilizing React. This React project is an eCommerce website that will showcase products, allow users to add them to the shopping cart and finally check out with all of one's products when the user has completed shopping.
 
 ## Getting Started
@@ -14,10 +14,10 @@ installed, there are only two commands:
 ## Project Structure
 
 ```
-server/       		     # Backend source code
-├── index.js   			 ### Server entry point
-├── middleware 			 ### Reusable middleware
-├── models     			 ### Sequelize data models
+server/       		       # Backend source code
+├── index.js   			     ### Server entry point
+├── middleware 			     ### Reusable middleware
+├── models     			     ### Sequelize data models
 │
 ├── routes               ### Where all routing happens
 │   ├── admin.js         ##### Admin pages, render using views
@@ -33,8 +33,8 @@ server/       		     # Backend source code
     └── template.ejs     ##### Shared template for admin pages
 
 
-src/       		         # Backend source code
-├── App.jsx        		 ### The top-level component for React
+src/       		           # Backend source code
+├── App.jsx        		   ### The top-level component for React
 ├── App.scss             ### Any general, non-component styling done here
 ├── index.ejs            ### HTML template for the app
 ├── index.js             ### Webpack entry point / component mounting
@@ -59,8 +59,12 @@ webpack.config.js        # Webpack configuration for dev _and_ production
 
 ## Contribute
 
-Contributions are always welcome!
-Please read the [contribution guidelines](Contributing.md) first.
+* Contributions are always welcome! Please read the [contribution guidelines](Contributing.md) first.
+
+
+## Deployment
+
+* Please check out the site hosted on [Heroku](https://watchx-heroku.herokuapp.com/).
 
 ## Attributions
 
