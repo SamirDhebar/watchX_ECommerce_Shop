@@ -7,7 +7,7 @@
 body {
 	box-sizing: border-box;
 	margin: 0 auto;
-	font-family: 'Montserrat';
+	font-family: 'Optima', sans-serif;
 	line-height: 1.5;
 	padding: 48px 12px;
 	background-image: url();
@@ -15,20 +15,19 @@ body {
 
 }
 
-p {
-	font-size: 20px;
+h1 {
+	margin-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
 }
 
-.cart-checkout-button {
-	display: block;
-	margin: auto;
-	width: 100%;
-}
-
-.cart-item-image {
-	display: block;
-	margin: auto;
-	width: 200px;
-	height: 250px;
-	padding-bottom: 10px;
+.404 {
+display: block;
+position: absolute;
+text-align: center;
+margin: 0;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)
 }

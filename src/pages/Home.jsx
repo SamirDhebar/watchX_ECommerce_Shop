@@ -1,19 +1,33 @@
-import "./Home.scss";
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { connect } from "redux-thunk";
+import { Grid } from "semantic-ui-react";
+import "./Home.scss";
 
 class Home extends Component {
+	componentDidMount() {
+		document.body.classList.add("has-bg");
+	}
+
+	componentWillUnmount() {
+		document.body.classList.remove("has-bg");
+	}
 	render() {
 		return (
-			<div className="app-home">
-				<div className="container">
-					<div className="image-container"  />
-					<div className="info-container"  />
+			<Grid centered>
+				<Grid.Column width={20}>
+					<div className = "home">
+						<div className="foo">
+	  				<span className="letter" data-letter="watchX Timepieces" />
 
-				</div>
-			</div>
+						</div>
+
+						{/*
+				 <h1> watchX </h1> */}
 
 
+					</div>
+				</Grid.Column>
+			</Grid>
 		);
 	}
 }
