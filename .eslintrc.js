@@ -129,6 +129,7 @@ const eslintConf = {
 		}],
 		"wrap-iife": [SEV2, "outside"],
 		"arrow-spacing": [SEV3, { before: true, after: true }],
+		"arrow-body-style": [SEV3, "as-needed"],
 		"arrow-parens": [SEV3, "always"],
 
 		// Classes
@@ -147,13 +148,12 @@ if (hasBabel) {
 		"prefer-destructuring": [SEV2, { object: true }],
 		"prefer-rest-params": hasBabel ? SEV2 : "off",
 
-		"import/no-unresolved": [SEV1, { caseSensitive: false }],
+		"import/no-unresolved": SEV1,
 		"import/named": SEV1,
 		"import/default": SEV1,
 		"import/no-absolute-path": SEV1,
 		"import/export": SEV1,
 		"import/no-duplicates": SEV2,
-		"import/prefer-default-export": SEV2,
 		"import/first": SEV2,
 		"import/no-webpack-loader-syntax": SEV2,
 		"import/no-mutable-exports": SEV2,
@@ -178,11 +178,8 @@ if (hasReact) {
 		"react/jsx-pascal-case": SEV2,
 		"react/jsx-wrap-multilines": SEV2,
 		"react/self-closing-comp": SEV2,
-		"react/default-props-match-prop-types": SEV2,
-		"react/prop-types": SEV2,
 
 		"react/jsx-closing-bracket-location": SEV3,
-		"react/jsx-indent-props": [SEV3, tabsOrSpaces],
 	});
 }
 
