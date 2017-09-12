@@ -1,47 +1,69 @@
 import "./Navigation.scss";
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-import watchImg from "assets/images/watch.png";
+import { NavLink, Link } from "react-router-dom";
+import { Menu } from "semantic-ui-react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+
+
+
 
 class Navigation extends Component {
 	render() {
+		console.log(this.props);
+		const { cartTotalItems } = this.props;
+
 		const links = [{
-			to: "/",
-			text: "iWatch",
-		}, {
-			to: "/catalog",
-			text:"Products",
-		}, {
-			to: "/cart",
-			text: "Cart",
+		// 	to: "/about",
+		// 	text: "about",
+		// },	{
+			to: "/gallery",
+			text: "Gallery",
 		}, {
 			to: "/contact",
-			text: "Contact Us",
+			text: "Contact",
+		}, {
+			to: "/cart",
+			text: "Cart" + " " + cartTotalItems,
 		}];
 
 		return (
-			<div>
-				<nav className="navbar">
-					<div className="logo-box">
-						<img src={watchImg} className="logo-image" />
-					</div>
-					{links.map((link) => (
-						<NavLink
-							key={link.to}
-							to={link.to}
-							className={link.customClass || "nav-link"}
-							// activeClass="is-active"
-							exact
-						> {link.text}
-						</NavLink>
+			< Menu >
+				< Menu.Menu>
+					<Menu.Item position="left">
+						<Link to="/" className="Nav-Link-Home">
+							watchX
+						</Link>
+					</Menu.Item>
+				</Menu.Menu>
+				< Menu.Menu position= "middle">
+					{links.map((link, index) => (
+						<Menu.Item key= {index}>
+							<NavLink
+								key= {link.to}
+								to= {link.to}
+								className= "Nav-link"
+								activeClassName= "is-active"
+							>
+								{link.text}
+							</NavLink>
+						</Menu.Item>
 					))}
-					{/* <span className="nav-display-cart-count">{ this.props.cartCount }</span> */}
-					<img src={watchImg} className="logo-image" />
-
-				</nav>
-			</div>
+				</Menu.Menu>
+			</Menu>
 		);
 	}
 }
 
-export default Navigation;
+Navigation.propTypes = {
+	cartTotalItems: PropTypes.number,
+};
+
+
+function mapStateToProps(state, props) {
+	return {
+		cartTotalItems: state.cart.cartTotalItems,
+	};
+}
+
+export default connect(mapStateToProps) (Navigation);

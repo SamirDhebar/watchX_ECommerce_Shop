@@ -1,41 +1,41 @@
-// @font-face{
-//   font-family: "Unique";
-//   src:"src/assets/fonts/Unique.tff", format("truetype");
-// }
-@font-face {
-  font-family: 'Cantora One';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Cantora One'), local('CantoraOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/cantoraone/v2/2Tarv7Qs4oCEU-xItQ7PXZ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
-}
 
-.navbar {
-	width: 100%;
-	display: inline-block;
+
+.Nav {
 	text-align: center;
-	background-color: #2d0043;
-}
-.home-link {
-	width: 200px;
-	margin-right: 35%;
-	margin-right: calc(95% - 500px);
-}
-.navbar a{
-	text-decoration: none;
-	font-family: 'Cantora One', sans-serif;
-	text-align: center;
-	width: 1000px;
-	color: white;
-	padding: 35px;
-}
-.logo-box {
-	display: inline-block;
-}
-.logo-image {
-	width: 40px;
-	height: 40px;
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #E8EFD5;
+	border-bottom: 1px solid #000;
+
+	&-link {
+		padding: 0 4px;
+		color: #DED69C;
+		text-decoration: none;
+
+		&.is-active,
+		&:hover {
+			color: #9ca4de;
+			;
+		}
+
+		&.is-active {
+			text-decoration: underline;
+		}
+	}
 }
 
-.logo-box	span {
+.Nav-Link-Home {
+padding: 0 4px;
+color: #DED69C;
+text-decoration: none;
 
+	&.is-active,
+	&:hover {
+		color: #9ca4de;
+		;
+	}
+
+&.is-active {
+	text-decoration: underline;
+	}
 }
